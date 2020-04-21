@@ -1,0 +1,19 @@
+{
+    "name": "easysoft",
+    "version": "1.0.0",
+    "description": "A web application that displays a list of employees within a company (Easysoft) and enable employees to submit their request of daily to-do list of items for the day.",
+    "main": "app.js",
+    "scripts": {
+        "start": "nodemon app.js"
+    },
+    "author": "Baidoo Nana Lartey",
+    "license": "ISC",
+    "dependencies": {
+        "ejs": "^3.0.2",
+        "express": "^4.17.1",
+        "mongodb": "^3.5.6"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.3"
+    }
+}

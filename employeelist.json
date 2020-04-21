@@ -1,0 +1,56 @@
+[
+    {
+    "employeeID": "GM2021",
+    "name": "William Lartey ",
+    "position": "General Manager",
+    "image": "/images/idahosa.png"
+},
+{
+    "employeeID": "HF2021",
+    "name": "Benson Idahosa",
+    "position": "Head of Finance",
+    "image": "/images/joshuaselman.jpg"
+},
+{
+    "employeeID": "HD2564",
+    "name": "Myles Munroe ",
+    "position": "Human Resource Manager",
+    "image": "/images/mylesmunroe.jpg"
+},
+{
+    "employeeID": "SM3201",
+    "name": "Joshua Selman ",
+    "position": "Sale Manager",
+    "image": "/images/joshuaselman.jpg"
+},
+{
+    "employeeID": "CA3201",
+    "name": "Jeff Bezos",
+    "position": "Chief Acccountant",
+    "image": "/images/chris.jpg"
+},
+{
+    "employeeID": "CS4530",
+    "name": "Kwadwo Oware",
+    "position": "Cyber Security",
+    "image": "/images/alice.jpg"
+},
+{
+    "employeeID": "LM2001",
+    "name": "Calvin Mensah ",
+    "position": "Logistics Manager",
+    "image": "/images/fred.jpg"
+},
+{
+    "employeeID": "PM2302",
+    "name": "Solomon Lartey ",
+    "position": "Production Manager",
+    "image": "/images/sir.jpg"
+},
+{
+    "employeeID": "",
+    "name": "Solomon Lartey ",
+    "position": "Head of support team",
+    "image": "/images/fine.jpg"
+}
+]
