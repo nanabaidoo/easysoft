@@ -39,9 +39,29 @@
 
 
 
-<div class="container">
-  <h2> Todo </h2>
+<div class="container mt-2">
 
+    <div class="row">
+        <div class="col">
+    <div class="row">
+        <% employeelist.forEach((employee)=> { %>
+            <div class="col-sm-12 col-md-3 col-lg-3 mb-3">
+                <div class="card" style="width: 17rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%= employee.name %>
+                            
+                        </h5>
+                        <%= employee.position %>
+                    </div>
+                </div>
+            </div>
+            <% }) %>
+    </div>
+</div>
+    </div>
+<div class="col">
+  <h2> Todo </h2>
     <table class="table">
     <thead class="thead-dark">
       <tr>
@@ -51,6 +71,14 @@
       </tr>
     </thead>
     <tbody> 
+        <tr>
+            <form action="/newTodo" method="POST">
+            <th scope="row"> <button class="btn btn-info">✍🏼 write</button> </th>
+            <td> <input type="text" name="activity" class="form-control" placeholder="create task for today"></td>
+            <td><input type="text" name="status" class="form-control" placeholder="status - done/pending"></td>
+            </form>
+        </tr>
+
       <% let i = 1; todolist.forEach((item) => { %>
             <tr>
                 <th scope="row"><%- i++ %></th>
@@ -60,7 +88,8 @@
          <% }) %>
     </tbody>
   </table>
-
 </div>
+    </div>
+  </div>
 </body>
 </html>

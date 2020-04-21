@@ -13,6 +13,46 @@
     <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:black;">
+        <a class="navbar-brand" href="/">EASYSOFT </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/employeeList">Employees <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/manager">Manager <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container pt-4">
+        <div class="row">
+            <% employeelist.forEach((employee)=> { %>
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card" style="width: 17rem;">
+                        <img src="<%= employee.image %>" class="card-img-top img-thumbnail" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <%= employee.name %>
+                                <br>
+                                <%= employee.position %>
+                            </h5>
+                            <p class="card-text"></p>
+                            <a href="/todoList" class="btn btn-primary btn-sm">View To-do list</a>
+                        </div>
+                    </div>
+                </div>
+                <% }) %>
+        </div>
+</div>
 </body>
 </html>

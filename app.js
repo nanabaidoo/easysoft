@@ -53,7 +53,27 @@ app.get('/todoList', async (req, res)=>{
     })
 });
 
+app.get('/employeeList', async (req, res)=>{
+    res.render('employeeList', {
+        employeelist
+    })
+});
 
+app.get('/manager', async (req, res)=>{
+    const todolist = await getAll();
+    res.render('admin', {
+        employeelist,
+        todolist
+    });
+});
+app.post('/newTodo', async(req, res)=>{
+    const data = {
+        activity: req.body.activity,
+        status: req.body.status
+    }
+    const result = await createTodo(data);
+    res.redirect('/manager');
+})
 
 app.listen(3000, ()=>{
     console.log('App is listening on port 30000....')
